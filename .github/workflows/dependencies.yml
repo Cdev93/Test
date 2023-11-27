@@ -11,13 +11,16 @@ jobs:
             - name: Code checkout
               uses: actions/checkout@v4
 
+            - name: rep path
+              run: cd $GITHUB_WORKSPACE
+            
             - name: node config
               uses: actions/setup-node@v4
               with:
-                node-version: '14'
+                node-version: 'latest'
             
             - name: Install vite and dep
               run: |
                 npm install -g create-vite
-                npm install
+                npm install node
         
