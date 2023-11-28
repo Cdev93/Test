@@ -22,4 +22,7 @@ jobs:
                 npm install node
         
             - name: App build
-              run: vite build
+              uses: npm run build
+              with:
+                script: npm run build
+              
