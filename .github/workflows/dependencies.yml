@@ -10,11 +10,7 @@ jobs:
         steps:
             - name: Code checkout
               uses: actions/checkout@v4
-          
-              with:
-                  script: cd Ubuntu\home\carlos\pruebaTest\Test
-            
-            
+                 
             - name: node config
               uses: actions/setup-node@v4
               with:
@@ -25,3 +21,5 @@ jobs:
                 npm install -g create-vite
                 npm install node
         
+            - name: App build
+              run: npm run build
