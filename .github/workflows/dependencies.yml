@@ -10,9 +10,10 @@ jobs:
         steps:
             - name: Code checkout
               uses: actions/checkout@v4
-
-            - name: rep path
-              run: cd $GITHUB_WORKSPACE
+          
+              with:
+                  script: cd Ubuntu\home\carlos\pruebaTest\Test
+            
             
             - name: node config
               uses: actions/setup-node@v4
