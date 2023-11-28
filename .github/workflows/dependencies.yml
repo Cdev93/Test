@@ -22,7 +22,7 @@ jobs:
                 npm install node
         
             - name: App build
-              uses: npm run build
+              uses: actions/setup-node@v4
               with:
                 script: npm run build
               
