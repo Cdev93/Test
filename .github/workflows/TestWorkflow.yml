@@ -19,9 +19,6 @@ jobs:
       - name: ⬇️ Checkout project
         uses: actions/checkout@v4
 
-      - name: 🧙‍♂️ Setup environment
-        uses: ./.github/actions/setup-environment
-
       - name: 🖍️ Check types
         run: npm run check:types
 
