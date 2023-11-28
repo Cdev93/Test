@@ -40,15 +40,6 @@
     "printWidth": 80,
     "endOfLine": "auto",
     "arrowParens": "always"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,html}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
+  
 }
