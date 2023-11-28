@@ -19,23 +19,17 @@ jobs:
       - name: ⬇️ Checkout project
         uses: actions/checkout@v4
 
-      - name: 🖍️ Check types
-        run: npm run check:types
+      - name: 🧙‍♂️ Check src
+        uses: ./Prueba/src
+
+      - name: 🖍️ Check lint
+        run: npm run check-lint
 
       - name: 💅 Check format
-        run: npm run check:format
-
-      - name: 📑 Check lint
-        run: npm run check:lint
+        run: npm run check-prettier
 
       - name: 📦 Check package.json
-        run: npm run check:packagejson
-
-      - name: 📝 Check markdown
-        run: npm run check:markdown
-
-      - name: 🔤 Check spelling
-        run: npm run check:spelling
+        run: npm run check-packagejson
 
   test:
     name: 🧑‍🔬 Test project
