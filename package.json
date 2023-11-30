@@ -10,7 +10,7 @@
     "check-lint": "eslint . --ext .js,.jsx",
     "check-prettier": "prettier --check .",
     "prepare": "husky install",
-    "test": "playwright test test-examples/*"
+    "test": "playwright test tests-examples/*"
   },
   "dependencies": {
     "mkdirp": "^3.0.1",
