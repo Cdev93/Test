@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "check-lint": "eslint . --ext .js,.jsx",
     "check-prettier": "prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "playwright test"
   },
   "dependencies": {
     "mkdirp": "^3.0.1",
